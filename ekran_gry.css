@@ -1,0 +1,203 @@
+body {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background: url(gra.jpeg) no-repeat;
+    background-size: cover; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p, ul, h1 {
+    color: white;
+}
+
+table {
+    color: white;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+p, .lista1, .lista2, caption {
+    font-size: 30px;
+}
+
+.lista1, .lista2, .planety, .statki {
+    text-align: left;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    left: -20px;
+    top: -25px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "nick czas czas konto"
+        "planety planety statki statki"
+        "lista1 lista1 lista2 lista2"
+}
+
+.nick {
+    grid-area: nick;
+}
+
+.czas {
+    grid-area: czas;
+}
+
+.konto {
+    grid-area: konto;
+}
+
+.lista1 {
+    grid-area: lista1;
+}
+
+.lista2 {
+    grid-area: lista2;
+}
+
+.statki {
+    grid-area: statki;
+}
+
+.planety {
+    grid-area: planety
+}
+
+.overlay {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup, .popup2, .popup3 {
+    text-align: center;
+    margin: 70px auto;
+    padding: 10px;
+    border-radius: 50px;
+    /* width: 30%; */
+    position: absolute;
+    /* left: 35%; */
+    top: -50px;
+    overflow: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup {
+    background: rgb(247, 0, 255);
+    width: 30%;
+    left: 35%;
+}
+
+.popup2 {
+    background-color: rgb(16, 139, 43);
+    width: 50%;
+    left: 25%;
+}
+
+.popup3 {
+    background-color: blue;
+    width: 30%;
+    left: 35%; 
+}
+
+.storage {
+    margin-top: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.popup h2, .popup2 h2, .popup3 h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close, .popup2 .close, .popup3 .close {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover, .popup2 .close:hover, .popup3 .close:hover {
+    color: #06D85F;
+}
+
+button {
+    text-align: center;
+    font-size: 10px;
+    vertical-align: middle;
+    position: relative;
+    color: black;
+    border: 1px solid rgb(172, 224, 209);
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+
+svg {
+    width: 500px;
+    height: 500px;
+    border: 1px solid aqua;
+}
+
+.circle {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+    .popup, .popup3{
+      width: 70%;
+      left: 15%;
+      position: fixed;
+    }
+
+    .popup2 {
+        width: 90%;
+        left: 2.5%;
+        position: fixed;
+    }
+
+    .popup2 table {
+        left: -2%;
+    }
+
+    .button {
+      width: 70%;
+    }
+
+    .overlay {
+        overflow: auto;
+    }
+  }

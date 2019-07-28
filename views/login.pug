@@ -1,0 +1,14 @@
+html
+    head
+        title= logowanie
+
+    style
+
+        include style.css
+    body
+        h1 logowanie
+
+        form(action = "/verify" method = "POST")
+            input(name = "login" type = "text" required placeholder = "login")
+            input(name = "password" type = "password" required placeholder = "hasło")
+            button(type = "Submit") Zaloguj

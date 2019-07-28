@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GRA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="ekran_gry.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="nick">Mój Nick: ufo1403</p>
+        <p class="konto">Stan konta</p>
+        <p class="czas">Pozostały czas: 42s</p>
+
+        <h1 class="planety">Planety:</h1>
+        <ul class="lista1">
+            <li> <a class="link" href="#planeta">Alderaan</a> 2 x 3 </li>
+            <li> <a class="link" href="#planeta">Argoland</a> 24 x 29 </li>
+            <li> <a class="link" href="#planeta">Arrakis</a> 53 x 93 </li>
+            <li> <a class="link" href="#planeta">Corellia</a> 13 x 90 </li>
+            <li> <a class="link" href="#planeta">Encja</a> 74 x 23</li>
+            <li> <a class="link" href="#planeta">Gaia</a> 42 x 13 </li>
+            <li> <a class="link" href="#planeta">Ksi</a> 1 x 12 </li>
+            <li> <a class="link" href="#planeta">Leonida</a> 55 x 32 </li>
+            <li> <a class="link" href="#planeta">NowWhat</a> 63 x 63 </li>
+            <li> <a class="link" href="#planeta">Sur'Kesh</a> 15 x 19 </li>
+            <li> <a class="link" href="#planeta">Tairia</a> 15 x 17 </li>
+            <li> <a class="link" href="#planeta">Tatooine</a> 71 x 51 </li>
+            <li> <a class="link" href="#planeta">Tuchanka</a> 98 x 76 </li>
+            <li> <a class="link" href="#planeta">Ziemia</a> 33 x 88 </li>
+        </ul>
+
+        <h1 class="statki">Statki:</h1>
+        <ul class="lista2">
+            <li> <a href="#statek"> Axiom </a> 2 x 3 [Alderaan] </li>
+            <li> <a href="#statek"> Enterprise </a> 1 x 12 [Ksi] </li>
+            <li> <a href="#statek_w_podróży"> Goliath </a> 15 x 18 [Tairia --> Sur'Kesh] </li>
+        </ul>
+
+    </div>
+    <div id="planeta" class="overlay">
+        <div class="popup">
+            <p>Planeta: Alderaan</p>
+
+            <table>
+                <caption> Towary </caption>
+                <tr>
+                    <th> Nazwa </th>
+                    <th> Liczba </th>
+                    <th> Cena kupna </th>
+                    <th> Cena sprzedarzy </th>
+                </tr>
+                <tr>
+                    <td> Cynamon </td>
+                    <td> 30 </td>
+                    <td> 10 </td>
+                    <td> 20 </td>
+                </tr>
+                <tr>
+                    <td> Dwimeryt </td>
+                    <td> 5 </td>
+                    <td> 25 </td>
+                    <td> 10 </td>
+                </tr>
+                <tr>
+                    <td> Ziemniaki </td>
+                    <td> 1 </td>
+                    <td> 3 </td>
+                    <td> 2 </td>
+                </tr>
+            </table>
+
+            <p class="popstatki">Statki:</p>
+            <ul class="lista4">
+                <li> <a href="#statek"> Axiom </a> </li>
+                <li> Hermes </li>
+                <li> Goliat </li>
+                <li> Nostromo </li>
+            </ul>
+
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+
+    <div id="statek" class="overlay">
+        <div class="popup2">
+            <h1> Statek: Axiom </h1>
+            <p> Położenie: 2 x 3 <br> [Alderaan] </p>
+            <p class="storage">13/27</p>
+            <table>
+                <caption> Ładunek </caption>
+                <tr>
+                    <th> Nazwa </th>
+                    <th> Liczba </th>
+                </tr>
+                <tr>
+                    <td> Cynamon </td>
+                    <td> 30 </td>
+                </tr>
+                <tr>
+                    <td> Dwimeryt </td>
+                    <td> 5 </td>
+                </tr>
+                <tr>
+                    <td> Ziemniaki </td>
+                    <td> 1 </td>
+                </tr>
+            </table>
+
+            <table>
+                <caption> Targowisko </caption>
+                <tr>
+                    <th> Nazwa </th>
+                    <th> Dostępne </th>
+                    <th> Cena kupna </th>
+                    <th> Cena sprzedarzy </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td> Cynamon </td>
+                    <td> 30 </td>
+                    <td> 10 </td>
+                    <td> 20 </td>
+                    <td>
+                        <form action="" method="GET">
+                            <button type="submit"> KUP </button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="" method="GET">
+                            <button type="submit"> Sprzedaj </button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Dwimeryt </td>
+                    <td> 5 </td>
+                    <td> 25 </td>
+                    <td> 10 </td>
+                    <td>
+                        <form action="" method="GET">
+                            <button type="submit"> KUP </button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="" method="GET">
+                            <button type="submit"> Sprzedaj </button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Ziemniaki </td>
+                    <td> 1 </td>
+                    <td> 3 </td>
+                    <td> 2 </td>
+                    <td>
+                        <form action="" method="GET">
+                            <button type="submit"> KUP </button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="" method="GET">
+                            <button type="submit"> Sprzedaj </button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+
+            <form action="" method="GET">
+                    <p> Wybierz planetę: </p>
+                    <select>
+                        <option>Alderaan</option>
+                        <option>Argoland</option> 
+                        <option>Arrakis</option> 
+                        <option>Corellia</option> 
+                        <option>Encja</option>
+                        <option>Gaia</option> 
+                        <option>Ksi</option>
+                        <option>Leonida</option> 
+                        <option>NowWhat</option> 
+                        <option>Sur'Kesh</option> 
+                        <option>Tairia</option> 
+                        <option>Tatooine</option> 
+                        <option>Tuchanka</option> 
+                        <option>Ziemia</option> 
+                    </select>
+                    <button type="submit"> Podróżuj </button>
+            </form>
+
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+
+    <div id="statek_w_podróży" class="overlay">
+        <div class="popup3">
+            <h1> Statek: Goliath </h1>
+            <p> Położenie: 15 x 18 <br> [Tairia --> Sur'Kesh] </p>
+
+            <table>
+                <caption> Ładunek </caption>
+                <tr>
+                    <th> Nazwa </th>
+                    <th> Liczba </th>
+                </tr>
+                <tr>
+                    <td> Cynamon </td>
+                    <td> 30 </td>
+                </tr>
+                <tr>
+                    <td> Dwimeryt </td>
+                    <td> 5 </td>
+                </tr>
+                <tr>
+                    <td> Ziemniaki </td>
+                    <td> 1 </td>
+                </tr>
+            </table>
+
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+    <script src="ekran_gry.js"></script>
+</body>
+
+</html>

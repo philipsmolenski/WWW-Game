@@ -1,0 +1,47 @@
+html
+    head
+        title= upload
+
+    style
+
+        include style.css
+    body
+        p game_duration = #{game.game_duration}
+        p initial_credits = #{game.initial_credits}
+        
+
+        p items
+        ul
+            each item, index in game.items
+                li #{index}. #{item}
+
+        p planets:
+        ul 
+            each planet, index in game.planets
+
+                li #{index}
+
+                p available_items
+
+                    ul 
+                        each item, index in planet.available_items
+
+                            li #{index} 
+
+                                ul
+
+                                    li available #{item.available}
+                                    li buy_price #{item.buy_price}
+                                    li sell_price #{item.sell_price}
+
+                        li x = #{planet.x}
+                        li y = #{planet.y}
+
+        ul 
+            each starship, index in game.starships  
+
+                li #{index}
+
+                ul
+                    li cargo_hold_size #{starship.cargo_hold_size}
+                    li position #{starship.position}

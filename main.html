@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kosmiczny Handlarz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+
+    <header class="header">Witaj w grze Kosmiczny Handlarz!</header>
+
+    <div class="container">
+
+        <table class="table">
+            <!-- <caption> Najlepsze wyniki </caption>
+            <tr>
+                <th> Miejsce </th>
+                <th> Nazwa </th>
+                <th> Wynik </th>
+            </tr>
+            <tr>
+                <td> 1. </td>
+                <td> Maciek </td>
+                <td> 500 </td>
+            </tr>
+            <tr>
+                <td> 2. </td>
+                <td> Paweł </td>
+                <td> 490 </td>
+            </tr>
+            <tr>
+                <td> 3. </td>
+                <td> Tomek </td>
+                <td> 470 </td>
+            </tr>
+            <tr>
+                <td> 4. </td>
+                <td> Janek </td>
+                <td> 450 </td>
+            </tr>
+            <tr>
+                <td> 5. </td>
+                <td> Krzysiek </td>
+                <td> 420 </td>
+            </tr>
+            <tr>
+                <td> 6. </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td> 7. </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td> 8. </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td> 9. </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td> 10. </td>
+                <td>  </td>
+                <td>  </td>
+            </tr> -->
+        </table>
+
+        <a class="button" href="#nick">Rozpocznij grę!</a>
+
+    </div>
+
+    <div id="nick" class="overlay">
+        <div class="popup">
+            <h1>Wprowadź swój pseudonim</h1>
+            <a class="close" href="#">&times;</a>
+            <form action="test.html"
+                  onsubmit="window.localStorage.setItem('nick', document.getElementById('nick2').value);
+                    window.localStorage.setItem('mapa', document.getElementById('mapka').value)">
+                Nick: <input type="text" id="nick2"><br>
+                Mapka: <select id="mapka" form="carform"></select><br>
+                <button type="submit"> zatwierdź </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <form action="/liczba" method="POST">
+        Klucz: <input name="klucz" type="text" required placeholder="kej"><br>
+        Liczba: <input name="liczba" type="text" required placeholder="numerek"><br>
+        <button type="submit"> zatwierdź </button>
+    </form>
+
+    <a href="/kupa"> pokaż liczby </a> -->
+
+    <a href="/upload"> Dodaj mapkę </a>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

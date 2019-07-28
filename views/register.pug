@@ -1,0 +1,14 @@
+html
+    head
+        title= rejestracja
+
+    style
+
+        include style.css
+    body
+        h1 rejestracja
+
+        form(action = "/verify_new" method = "POST")
+            input(name = "login" type = "text" required placeholder = "login")
+            input(name = "password" type = "password" required placeholder = "hasło")
+            button(type = "Submit") Załóż konto!
